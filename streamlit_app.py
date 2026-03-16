@@ -8,7 +8,7 @@ st.set_page_config(page_title="Deepfake Detector", layout="wide")
 
 st.title("AI Deepfake Face Detection")
 
-model = load_model("deepfake_detector.h5")
+model = load_model("deepfake_detector.h5", compile=False)
 
 IMG_SIZE = (160,160)
 
